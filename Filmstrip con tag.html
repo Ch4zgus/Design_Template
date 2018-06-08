@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+
+
+<script>
+	
+	function sePresiono() {
+	var escapedUrl = escape('%%DEST_URL%%');
+	escapedUrl = '%%CLICK_URL_ESC%%'+ escapedUrl;
+	window.open(escapedUrl);
+	};
+
+	function expande(){
+	  window.frameElement.style.width = '300px';        
+     window.frameElement.style.height = '600px';        
+     window.frameElement.style.position = 'relative';        
+	}
+
+</script>
+
+<body onload="expande()" style="margin:0px !important;">
+
+<div id="clic_contraido" style="display:block; width:300px; height:600px; cursor:pointer; cursor:hand;" onclick="sePresiono()"; >
+
+    <!-- Aqui va el TAG -->
+
+</div>
+	
+
+</body>
+</html>
